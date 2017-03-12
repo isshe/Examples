@@ -24,6 +24,12 @@
 
 
 
+* DataStructure
+
+  * Head
+
+    ​
+
 未完成：
 
 * DataStructure
