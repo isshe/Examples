@@ -26,7 +26,9 @@
 
 * DataStructure
 
-  * Head
+  * Head：c、
+
+  * Linked List：c、
 
     ​
 
