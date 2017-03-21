@@ -4,6 +4,7 @@
  * 3. 插入：insert；
  * 4. 删除：delete；
  * 5. 打印：print；
+ * 6. 销毁：destroy；
  */
 
 
@@ -124,6 +125,17 @@ void print(node_s *head)
 }
 
 
+void destroy(node_s **phead)
+{
+    node_s *temp_node = NULL;
+    for (; *phead != NULL; )
+    {
+        temp_node = (*phead)->next;
+        free(*phead);
+        *phead = temp_node;
+    }
+}
+
 //测试
 int main(void)
 {
@@ -163,6 +175,8 @@ int main(void)
     printf("delete 31:\n");
     delete(&linked_list, 31);
     print(linked_list);
+    
+    destroy(&linked_list);
     
     return 0;
 }
